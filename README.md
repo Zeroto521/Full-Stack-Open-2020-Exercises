@@ -1,5 +1,7 @@
 # Full Stack Open 2020 Exercises
 
+This project is the exercises of the [Full Stack Open 2020](https://fullstackopen.com/).
+
 ## Table of Content
 
 - part 0
