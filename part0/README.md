@@ -4,6 +4,6 @@
 
 ## Table of Content
 
-- [0.4: new note](part0/0.4.md)
-- [0.5: Single page app](part0/0.5.md)
-- [0.6: New note](part0/0.6.md)
+- [0.4: new note](./0.4.md)
+- [0.5: Single page app](./0.5.md)
+- [0.6: New note](./0.6.md)
