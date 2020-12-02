@@ -10,17 +10,18 @@ And some of the diagrams are powered by [mermaid](https://github.com/mermaid-js/
 
 ## Table of Content
 
-- [part 0](./part0)
+- [part 0: Fundamentals of Web apps](./part0)
   - [0.4: new note](part0/0.4.md)
   - [0.5: Single page app](part0/0.5.md)
   - [0.6: New note](part0/0.6.md)
-- part 1
-- part 2
-- part 3
-- part 4
-- part 5
-- part 6
-- part 7
-- part 8
-- part 9
-- part 10
+- [part 1: Introduction to React](./part1)
+  - [1.1-1.2: courseinfo](part1/courseinfo)
+- part 2: Communicating with server
+- part 3: Programming a server with NodeJS and Express
+- part 4: Testing Express servers, user administration
+- part 5: Testing React apps
+- part 6: State management with Redux
+- part 7: React router, custom hooks, styling app with CSS and webpack
+- part 8: GraphQL
+- part 9: Typescript
+- part 10: React Native
