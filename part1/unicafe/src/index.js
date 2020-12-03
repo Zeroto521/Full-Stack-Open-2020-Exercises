@@ -12,6 +12,7 @@ const App = () => {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
+  const all = good + bad + neutral
 
   return (
     <div>
@@ -24,6 +25,9 @@ const App = () => {
       <Counter name={'good'} number={good} />
       <Counter name={'neutral'} number={neutral} />
       <Counter name={'bad'} number={bad} />
+      <Counter name={'all'} number={all} />
+      <Counter name={'average'} number={(good - bad) / all} />
+      <Counter name={'positive'} number={String(good / all * 100) + '%'} />
     </div>
   )
 }
