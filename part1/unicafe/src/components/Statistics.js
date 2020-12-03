@@ -5,9 +5,18 @@ const Statistics = (props) => {
     const { name, good, neutral, bad } = props
     const all = good + bad + neutral
 
+    if (all === 0) {
+        return (
+            <div>
+                <Title name={name} />
+                No feedback given
+            </div>
+        )
+    }
+
     return (
         <div>
-            <Title name={'statistics'} />
+            <Title name={name} />
             <Counter name={'good'} number={good} />
             <Counter name={'neutral'} number={neutral} />
             <Counter name={'bad'} number={bad} />
