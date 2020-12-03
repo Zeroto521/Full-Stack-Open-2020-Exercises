@@ -1,4 +1,4 @@
-import { Counter } from './Counter'
+import { Statistic } from './Statistic'
 import { Title } from './Title'
 
 const Statistics = (props) => {
@@ -17,12 +17,13 @@ const Statistics = (props) => {
     return (
         <div>
             <Title name={name} />
-            <Counter name={'good'} number={good} />
-            <Counter name={'neutral'} number={neutral} />
-            <Counter name={'bad'} number={bad} />
-            <Counter name={'all'} number={all} />
-            <Counter name={'average'} number={(good - bad) / all} />
-            <Counter name={'positive'} number={String(good / all * 100) + ' %'} />
+
+            <Statistic text={'good'} value={good} />
+            <Statistic text={'neutral'} value={neutral} />
+            <Statistic text={'bad'} value={bad} />
+            <Statistic text={'all'} value={all} />
+            <Statistic text={'average'} value={(good - bad) / all} />
+            <Statistic text={'positive'} value={String(good / all * 100) + ' %'} />
         </div>
     )
 }
