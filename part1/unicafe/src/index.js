@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-import { Title } from './components/Title'
-import { Counter } from './components/Counter'
 import { Button } from './components/Button'
-
+import { Counter } from './components/Counter'
+import { Title } from './components/Title'
 
 const App = () => {
   // save clicks of each button to own state
@@ -27,7 +26,7 @@ const App = () => {
       <Counter name={'bad'} number={bad} />
       <Counter name={'all'} number={all} />
       <Counter name={'average'} number={(good - bad) / all} />
-      <Counter name={'positive'} number={String(good / all * 100) + '%'} />
+      <Counter name={'positive'} number={String(good / all * 100) + ' %'} />
     </div>
   )
 }
