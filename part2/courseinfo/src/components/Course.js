@@ -4,8 +4,9 @@ import { Total } from './Total'
 
 const Course = (props) => {
     const { course } = props
+
     return (
-        <div>
+        <div key={course.id}>
             <Header course={course.name} />
             <Content parts={course.parts} />
             <Total exercises={course.parts.map(x => x['exercises'])} />
