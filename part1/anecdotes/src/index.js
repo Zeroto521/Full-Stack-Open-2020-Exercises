@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom'
 
 import { Button } from './components/Button'
 import { random0tom } from './utils'
+import { Anecdote } from './components/Anecdote'
+
+
 
 const anecdotes = [
   'If it hurts, do it more often.',
@@ -22,17 +25,18 @@ const App = (props) => {
   const points_copy = [...points]
   points_copy[selected] += 1
 
+  const indexOfMax = points.indexOf(Math.max(...points))
+
   return (
     <div>
-      {anecdotes[selected]}
-
-      <br />
-      This anecdote has { points[selected]} votes.
+      <Anecdote name={'Anecdote of the day'} anecdote={anecdotes[selected]} point={points[selected]} />
 
       <div>
         <Button name={'vote'} func={vote_point} value={points_copy} />
         <Button name={'next anecdote'} func={setSelected} value={random0tom(anecdotes.length)} />
       </div>
+
+      <Anecdote name={'Anecdote with most votes'} anecdote={anecdotes[indexOfMax]} point={points[indexOfMax]} />
     </div>
   )
 }
