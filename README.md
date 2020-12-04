@@ -19,7 +19,7 @@ And some of the diagrams are powered by [mermaid](https://github.com/mermaid-js/
   - [1.6-1.11: unicafe](part1/unicafe)
   - [1.12-1.14: anecdotes](part1/anecdotes)
 - [part 2: Communicating with server](./part2)
-  - [2.1: Course information](part2/courseinfo)
+  - [2.1-2.5: Course information](part2/courseinfo)
 - part 3: Programming a server with NodeJS and Express
 - part 4: Testing Express servers, user administration
 - part 5: Testing React apps
