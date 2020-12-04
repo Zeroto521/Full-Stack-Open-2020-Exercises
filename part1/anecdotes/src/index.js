@@ -15,7 +15,6 @@ const anecdotes = [
 
 const App = (props) => {
   const [selected, setSelected] = useState(0)
-  console.log(selected)
 
   return (
     <div>
