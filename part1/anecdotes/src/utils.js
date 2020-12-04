@@ -1,5 +1,5 @@
 const random0tom = (max) => {
-    return Math.floor(Math.random() * (max + 1))
+    return Math.floor(Math.random() * (max))
 }
 
 const setToValue = (func, newValue) => () => {
