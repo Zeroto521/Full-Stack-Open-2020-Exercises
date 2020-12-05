@@ -20,7 +20,7 @@ And some of the diagrams are powered by [mermaid](https://github.com/mermaid-js/
   - [1.12-1.14: anecdotes](part1/anecdotes)
 - [part 2: Communicating with server](./part2)
   - [2.1-2.5: Course information](part2/courseinfo)
-  - [2.6-2.10: The Phonebook](part2/phonebook)
+  - [2.6-2.11: The Phonebook](part2/phonebook)
 - part 3: Programming a server with NodeJS and Express
 - part 4: Testing Express servers, user administration
 - part 5: Testing React apps

@@ -5,4 +5,4 @@
 ## Table of Content
 
 - [2.1-2.5: Course information](./courseinfo)
-- [2.6-2.10: The Phonebook](./phonebook)
+- [2.6-2.11: The Phonebook](./phonebook)
