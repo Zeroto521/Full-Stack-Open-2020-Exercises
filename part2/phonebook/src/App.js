@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { Filter } from './components/Filter'
-import { handleChange } from './utils'
+import { PersonForm } from './components/PersonForm'
 import { Persons } from './components/Persons'
 import { Title } from './components/Title'
 
@@ -40,13 +40,9 @@ const App = (props) => {
 
       <div>
         <Title name={'Add a new'} />
-        <form onSubmit={handleSubmit}>
-          <div>name: <input value={newName} onChange={handleChange(setNewName)} /></div>
-          <div>number: <input value={newNumber} onChange={handleChange(setNewNumber)} /></div>
-          <div>
-            <button type="submit">add</button>
-          </div>
-        </form>
+        <PersonForm handleSubmit={handleSubmit}
+          newName={newName} setNewName={setNewName}
+          newNumber={newNumber} setNewNumber={setNewNumber} />
       </div>
 
       <div>
