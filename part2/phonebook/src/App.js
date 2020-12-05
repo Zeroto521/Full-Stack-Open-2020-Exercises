@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+import { Filter } from './components/Filter'
 import { handleChange } from './utils'
 import { Persons } from './components/Persons'
 import { Title } from './components/Title'
@@ -8,6 +9,7 @@ const App = (props) => {
   const [persons, setPersons] = useState(props.persons)
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
+  const [searchName, setSerachName] = useState('')
 
 
   const handleSubmit = (event) => {
@@ -33,6 +35,11 @@ const App = (props) => {
     <div>
       <div>
         <Title name={'Phonebook'} />
+        <Filter searchName={searchName} setSerachName={setSerachName} />
+      </div>
+
+      <div>
+        <Title name={'Add a new'} />
         <form onSubmit={handleSubmit}>
           <div>name: <input value={newName} onChange={handleChange(setNewName)} /></div>
           <div>number: <input value={newNumber} onChange={handleChange(setNewNumber)} /></div>
@@ -44,7 +51,7 @@ const App = (props) => {
 
       <div>
         <Title name={'Numbers'} />
-        <Persons persons={persons} />
+        <Persons persons={persons} searchName={searchName} />
       </div>
     </div>
   )
