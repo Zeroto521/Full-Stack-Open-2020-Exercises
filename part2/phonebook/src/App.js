@@ -7,6 +7,7 @@ import { Title } from './components/Title'
 const App = (props) => {
   const [persons, setPersons] = useState(props.persons)
   const [newName, setNewName] = useState('')
+  const [newNumber, setNewNumber] = useState('')
 
 
   const handleSubmit = (event) => {
@@ -18,7 +19,10 @@ const App = (props) => {
       alert(`${newName} is already added to phonebook.`)
     }
     else {
-      const newObject = { 'name': newName }
+      const newObject = {
+        'name': newName,
+        'number': newNumber,
+      }
       setPersons(persons.concat(newObject))
       setNewName('')
     }
@@ -30,9 +34,8 @@ const App = (props) => {
       <div>
         <Title name={'Phonebook'} />
         <form onSubmit={handleSubmit}>
-          <div>
-            name: <input value={newName} onChange={handleChange(setNewName)} />
-          </div>
+          <div>name: <input value={newName} onChange={handleChange(setNewName)} /></div>
+          <div>number: <input value={newNumber} onChange={handleChange(setNewNumber)} /></div>
           <div>
             <button type="submit">add</button>
           </div>

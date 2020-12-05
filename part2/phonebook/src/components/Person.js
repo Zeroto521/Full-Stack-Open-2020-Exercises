@@ -3,6 +3,7 @@ const Person = (props) => {
   return (
     <tr>
       <td>{person.name}</td>
+      <td>{person.number}</td>
     </tr>
   )
 }
