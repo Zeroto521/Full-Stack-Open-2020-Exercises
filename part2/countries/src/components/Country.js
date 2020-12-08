@@ -1,5 +1,6 @@
 const Country = (props) => {
   const { country } = props
+
   return (
     <div>
       <h2>{country.name}</h2>
@@ -10,7 +11,7 @@ const Country = (props) => {
       <div>
         <h3>languages</h3>
         {
-          country.languages.map((e, i) => <li key={i}>{e.name}</li>)
+          country.languages.map(e => <li key={e.name}>{e.name}</li>)
         }
       </div>
       <br />
