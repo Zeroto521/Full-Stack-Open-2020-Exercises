@@ -14,7 +14,7 @@ const App = () => {
 
   useEffect(() => {
     Service.getAll().then(data => setPersons(data))
-  }, [])
+  }, [persons])
 
 
   const handleSubmit = (event) => {

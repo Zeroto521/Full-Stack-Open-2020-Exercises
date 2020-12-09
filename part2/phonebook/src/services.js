@@ -14,7 +14,12 @@ const create = newObject => {
 }
 
 
+const deletee = (id) => {
+  axios.delete(`${baseUrl}/${id}`)
+}
+
 export default {
   getAll,
-  create
+  create,
+  delete: deletee
 }
