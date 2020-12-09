@@ -15,12 +15,11 @@ const App = () => {
   const data_url = 'http://localhost:3001/persons'
 
   useEffect(() => {
-    axios
-      .get(data_url)
-      .then(response => {
-        setPersons(response.data)
-      })
+    axios.get(data_url).then(response => {
+      setPersons(response.data)
+    })
   }, [])
+
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -29,14 +28,16 @@ const App = () => {
 
     if (persons_names.includes(newName)) {
       alert(`${newName} is already added to phonebook.`)
-    }
-    else {
+    } else {
       const newObject = {
         'name': newName,
         'number': newNumber,
       }
-      setPersons(persons.concat(newObject))
-      setNewName('')
+
+      axios.post(data_url, newObject).then(response => {
+        setPersons(persons.concat(newObject))
+        setNewName('')
+      })
     }
   }
 
