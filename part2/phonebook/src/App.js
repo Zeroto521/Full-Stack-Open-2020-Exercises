@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { Filter } from './components/Filter'
+import { Notification } from './components/Notification'
 import { PersonForm } from './components/PersonForm'
 import { Persons } from './components/Persons'
 import { Title } from './components/Title'
@@ -11,10 +12,13 @@ const App = () => {
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSerachName] = useState('')
+  const [message, setMessage] = useState(null)
+
+  const timer = 3000
 
   useEffect(() => {
     Service.getAll().then(data => setPersons(data))
-  }, [persons])
+  }, [])
 
 
   const handleSubmit = (event) => {
@@ -29,17 +33,24 @@ const App = () => {
     if (persons_names.includes(newName) && window.confirm(message)) {
       const newObjectID = persons[persons_names.indexOf(newName)]['id']
       Service.update(newObjectID, newObject)
+
+      setMessage(`Added ${newName}`)
+      setTimeout(() => { setMessage(null) }, timer)
     } else {
       Service.create(newObject).then(data => setPersons(persons.concat(newObject)))
       setNewName('')
+
+      setMessage(`Added ${newName}`)
+      setTimeout(() => { setMessage(null) }, timer)
     }
   }
 
 
   return (
     <div>
+      <Title name={'Phonebook'} />
+      <Notification message={message} />
       <div>
-        <Title name={'Phonebook'} />
         <Filter searchName={searchName} setSerachName={setSerachName} />
       </div>
 
