@@ -1,4 +1,3 @@
-
 import { handleChange } from '../utils'
 
 const PersonForm = (props) => {

@@ -20,14 +20,16 @@ const App = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     const persons_names = persons.map(person => person.name)
+    const message = `${newName} is already added to phonebook, replace the old number with a new one?`
+    const newObject = {
+      'name': newName,
+      'number': newNumber,
+    }
 
-    if (persons_names.includes(newName)) {
-      alert(`${newName} is already added to phonebook.`)
+    if (persons_names.includes(newName) && window.confirm(message)) {
+      const newObjectID = persons[persons_names.indexOf(newName)]['id']
+      Service.update(newObjectID, newObject)
     } else {
-      const newObject = {
-        'name': newName,
-        'number': newNumber,
-      }
       Service.create(newObject).then(data => setPersons(persons.concat(newObject)))
       setNewName('')
     }
