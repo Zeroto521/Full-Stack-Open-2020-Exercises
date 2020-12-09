@@ -12,8 +12,6 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSerachName] = useState('')
 
-  const data_url = 'http://localhost:3001/persons'
-
   useEffect(() => {
     Service.getAll().then(data => setPersons(data))
   }, [])
