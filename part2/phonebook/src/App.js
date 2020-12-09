@@ -1,10 +1,10 @@
-import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 
 import { Filter } from './components/Filter'
 import { PersonForm } from './components/PersonForm'
 import { Persons } from './components/Persons'
 import { Title } from './components/Title'
+import Service from './services'
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -15,15 +15,12 @@ const App = () => {
   const data_url = 'http://localhost:3001/persons'
 
   useEffect(() => {
-    axios.get(data_url).then(response => {
-      setPersons(response.data)
-    })
+    Service.getAll().then(data => setPersons(data))
   }, [])
 
 
   const handleSubmit = (event) => {
     event.preventDefault()
-
     const persons_names = persons.map(person => person.name)
 
     if (persons_names.includes(newName)) {
@@ -33,11 +30,8 @@ const App = () => {
         'name': newName,
         'number': newNumber,
       }
-
-      axios.post(data_url, newObject).then(response => {
-        setPersons(persons.concat(newObject))
-        setNewName('')
-      })
+      Service.create(newObject).then(data => setPersons(persons.concat(newObject)))
+      setNewName('')
     }
   }
 
