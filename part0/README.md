@@ -7,3 +7,7 @@
 - [0.4: new note](./0.4.md)
 - [0.5: Single page app](./0.5.md)
 - [0.6: New note](./0.6.md)
+
+## About the Diagram
+
+Some of the diagrams are powered by [mermaid](https://github.com/mermaid-js/mermaid).
