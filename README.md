@@ -20,7 +20,8 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [2.1-2.5: Course information](part2/courseinfo)
   - [2.6-2.11, 2.15-2.20: The Phonebook](part2/phonebook)
   - [2.12-2.14: Data for countries](part2/countries)
-- part 3: Programming a server with NodeJS and Express
+- [part 3: Programming a server with NodeJS and Express](./part3)
+  - [3.1-3.11: Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
 - part 4: Testing Express servers, user administration
 - part 5: Testing React apps
 - part 6: State management with Redux
