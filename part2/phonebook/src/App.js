@@ -57,13 +57,12 @@ const App = () => {
       <Title name={'Phonebook'} />
       {
         errorMessage &&
-        <Notification message={message} error={true} />
+        <Notification message={errorMessage} error={true} />
       }
       {
         message &&
         <Notification message={message} />
       }
-      <Notification message={message} />
       <div>
         <Filter searchName={searchName} setSerachName={setSerachName} />
       </div>
