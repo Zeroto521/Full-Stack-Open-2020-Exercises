@@ -13,7 +13,6 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSerachName] = useState('')
   const [message, setMessage] = useState(null)
-  const [errorMessage, setErrorMessage] = useState(null)
 
   const timer = 3000
 
@@ -24,41 +23,37 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    const persons_names = persons.map(person => person.name)
-    const message = `${newName} is already added to phonebook, replace the old number with a new one?`
-    const newObject = {
-      'name': newName,
-      'number': newNumber,
-    }
 
-    if (persons_names.includes(newName) && window.confirm(message)) {
-      const newObjectID = persons[persons_names.indexOf(newName)]['id']
-      Service.update(newObjectID, newObject).then(data =>
-        setPersons(persons.map(person => newObjectID !== person.id ? person : data))
-      ).catch(error => {
-        setErrorMessage(`Information of ${newName} has already been removed from server`)
-        setTimeout(() => { setErrorMessage(null) }, 5000)
-      })
+    Service.query(newName).then(person => {
+      const newObject = {
+        'name': newName,
+        'number': newNumber,
+      }
 
-      setMessage(`Added ${newName}`)
-      setTimeout(() => { setMessage(null) }, timer)
-    } else {
-      Service.create(newObject).then(data => setPersons(persons.concat(newObject)))
-      setNewName('')
+      if (person) {
+        const message = `${newName} is already added to phonebook, replace the old number with a new one?`
+        if (window.confirm(message)) {
+          Service.update(person.id, newObject)
+          Service.getAll().then(data => setPersons(data))
 
-      setMessage(`Added ${newName}`)
-      setTimeout(() => { setMessage(null) }, timer)
-    }
+          setMessage(`Added ${newName}`)
+          setTimeout(() => { setMessage(null) }, timer)
+        }
+      } else {
+        Service.create(newObject)
+        Service.getAll().then(data => setPersons(data))
+
+        setNewName('')
+        setMessage(`Added ${newName}`)
+        setTimeout(() => { setMessage(null) }, timer)
+      }
+    })
   }
 
 
   return (
     <div>
       <Title name={'Phonebook'} />
-      {
-        errorMessage &&
-        <Notification message={errorMessage} error={true} />
-      }
       {
         message &&
         <Notification message={message} />

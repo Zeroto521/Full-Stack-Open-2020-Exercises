@@ -8,19 +8,21 @@ const getAll = () => {
 }
 
 
-const create = newObject => {
-  const request = axios.post(baseUrl, newObject)
-  return request.then(response => response.data)
+const create = (newObject) => {
+  axios.post(baseUrl, newObject)
 }
 
+const query = (name) => {
+  const request = axios.get(`${baseUrl}/query/${name}`)
+  return request.then(response => response.data)
+}
 
 const update = (id, newObject) => {
-  const request = axios.put(`${baseUrl}/${id}`, newObject)
-  return request.then(response => response.data)
+  axios.put(`${baseUrl}/${id}`, newObject)
 }
 
 
-const deletee = (id) => {
+const delete_ = (id) => {
   axios.delete(`${baseUrl}/${id}`)
 }
 
@@ -28,5 +30,6 @@ export default {
   getAll,
   create,
   update,
-  delete: deletee
+  query,
+  delete: delete_
 }
