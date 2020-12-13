@@ -1,4 +1,6 @@
-const Notification = ({ message, error = false }) => {
+import React from 'react'
+
+const Notification = (message, error = false) => {
   if (message) {
     if (error) {
       return (
