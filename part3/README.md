@@ -4,4 +4,6 @@
 
 ## Table of Content
 
-- [3.1-3.11: Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
+- [Phonebook frontend](../part2/phonebook)
+- [Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
+- [Phonebook database](https://github.com/Zeroto521/Phonebook-backend/blob/main/src/model.js)
