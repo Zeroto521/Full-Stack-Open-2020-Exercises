@@ -1,14 +1,7 @@
-import { useEffect } from 'react'
-
 import { Person } from './Person'
-import Service from '../services'
 
 const Persons = (props) => {
   const { persons, searchName, setPersons } = props
-
-  useEffect(() => {
-    Service.getAll().then(data => setPersons(data))
-  }, [])
 
   return (
     <div>

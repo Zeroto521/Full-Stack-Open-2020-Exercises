@@ -13,6 +13,7 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSerachName] = useState('')
   const [message, setMessage] = useState(null)
+  const [errorMessage, setErrorMessage] = useState(null)
 
   const timer = 3000
 
@@ -33,19 +34,25 @@ const App = () => {
       if (person) {
         const message = `${newName} is already added to phonebook, replace the old number with a new one?`
         if (window.confirm(message)) {
-          Service.update(person.id, newObject)
-          Service.getAll().then(data => setPersons(data))
-
-          setMessage(`Added ${newName}`)
-          setTimeout(() => { setMessage(null) }, timer)
+          Service.update(person.id, newObject).then(() => {
+            Service.getAll().then(data => setPersons(data))
+            setMessage(`Added ${newName}`)
+            setTimeout(() => setMessage(null), timer)
+          }).catch(error => {
+            setErrorMessage(error.response.data.error)
+            setTimeout(() => setErrorMessage(null), timer)
+          })
         }
       } else {
-        Service.create(newObject)
-        Service.getAll().then(data => setPersons(data))
-
-        setNewName('')
-        setMessage(`Added ${newName}`)
-        setTimeout(() => { setMessage(null) }, timer)
+        Service.create(newObject).then(() => {
+          Service.getAll().then(data => setPersons(data))
+          setNewName('')
+          setMessage(`Added ${newName}`)
+          setTimeout(() => setMessage(null), timer)
+        }).catch(error => {
+          setErrorMessage(error.response.data.error)
+          setTimeout(() => setErrorMessage(null), timer)
+        })
       }
     })
   }
@@ -57,6 +64,10 @@ const App = () => {
       {
         message &&
         <Notification message={message} />
+      }
+      {
+        errorMessage &&
+        <Notification message={errorMessage} error={true} />
       }
       <div>
         <Filter searchName={searchName} setSerachName={setSerachName} />

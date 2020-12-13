@@ -9,7 +9,8 @@ const getAll = () => {
 
 
 const create = (newObject) => {
-  axios.post(baseUrl, newObject)
+  const request = axios.post(baseUrl, newObject)
+  return request.then(response => response.data)
 }
 
 const query = (name) => {
@@ -18,12 +19,14 @@ const query = (name) => {
 }
 
 const update = (id, newObject) => {
-  axios.put(`${baseUrl}/${id}`, newObject)
+  const request = axios.put(`${baseUrl}/${id}`, newObject)
+  return request.then(response => response.data)
 }
 
 
 const delete_ = (id) => {
-  axios.delete(`${baseUrl}/${id}`)
+  const request = axios.delete(`${baseUrl}/${id}`)
+  return request.then(response => response.data)
 }
 
 export default {
