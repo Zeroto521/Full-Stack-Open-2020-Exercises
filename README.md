@@ -24,7 +24,7 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [Phonebook frontend](part2/phonebook)
   - [Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
   - [Phonebook database](https://github.com/Zeroto521/Phonebook-backend/blob/main/src/model.js)
-- part 4: Testing Express servers, user administration
+- [part 4: Testing Express servers, user administration](./part4)
 - part 5: Testing React apps
 - part 6: State management with Redux
 - part 7: React router, custom hooks, styling app with CSS and webpack
