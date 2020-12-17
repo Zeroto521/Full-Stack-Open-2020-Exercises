@@ -21,12 +21,14 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [2.6-2.11, 2.15-2.20: The Phonebook](part2/phonebook)
   - [2.12-2.14: Data for countries](part2/countries)
 - [part 3: Programming a server with NodeJS and Express](./part3)
-  - [Phonebook frontend](part2/phonebook)
-  - [Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
-  - [Phonebook database](https://github.com/Zeroto521/Phonebook-backend/blob/main/src/model.js)
+  - [3.1-3.22: Phonebook frontend](part2/phonebook)
+  - [3.9: Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
+  - [3.10, 3.21: Phonebook deploy to heroku](https://agile-refuge-83919.herokuapp.com/)
+  - [3.13-3.21: Phonebook database](https://github.com/Zeroto521/Phonebook-backend/blob/main/src/model.js)
 - [part 4: Testing Express servers, user administration](./part4)
-  - [4.1-4.2: Blog list backend](https://github.com/Zeroto521/Bloglist-backend)
-  - [4.3-4.7: helper functions and unit tests](https://github.com/Zeroto521/Bloglist-backend/tree/master/tests)
+  - [4.1-4.2, 4.13-4.14: Blog list backend](https://github.com/Zeroto521/Bloglist-backend)
+  - [4.3-4.7: helper functions and unit tests](https://github.com/Zeroto521/Bloglist-backend/blob/master/tests/list.test.js)
+  - [4.8-4.12: Blog list tests](https://github.com/Zeroto521/Bloglist-backend/blob/master/tests/api.test.js)
 - part 5: Testing React apps
 - part 6: State management with Redux
 - part 7: React router, custom hooks, styling app with CSS and webpack
