@@ -30,7 +30,7 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [4.3-4.7: helper functions and unit tests](https://github.com/Zeroto521/Bloglist-backend/blob/master/tests/list.test.js)
   - [4.8-4.12: Blog list tests](https://github.com/Zeroto521/Bloglist-backend/blob/master/tests/api.test.js)
   - [4.13-4.22: Blog list expansions](https://github.com/Zeroto521/Bloglist-backend)
-- part 5: Testing React apps
+- [part 5: Testing React apps](./part5)
 - part 6: State management with Redux
 - part 7: React router, custom hooks, styling app with CSS and webpack
 - part 8: GraphQL
