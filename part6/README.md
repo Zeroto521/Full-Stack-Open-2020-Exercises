@@ -5,3 +5,7 @@
 ## Table of Content
 
 - [6.1-6.2: unicafe revisited](https://github.com/Zeroto521/unicafe-redux)
+- [6.3-6.8: anecdotes](https://github.com/Zeroto521/anecdotes-redux)
+- [6.9-6.12: Better anecdotes](https://github.com/Zeroto521/anecdotes-redux)
+- [6.13-6.18: Anecdotes and the backend](https://github.com/Zeroto521/anecdotes-redux)
+- [6.19-6.21: anecdotes and connect](https://github.com/Zeroto521/anecdotes-redux/tree/connect)
