@@ -36,7 +36,8 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [5.17-5.22: Blog list end to end testing](https://github.com/Zeroto521/Bloglist-frontend/blob/master/cypress/integration/blog_app.spec.js)
 - [Part 6: State management with Redux](./part6)
   - [6.1-6.2: unicafe revisited](https://github.com/Zeroto521/unicafe-redux)
-- Part 7: React router, custom hooks, styling app with CSS and webpack
-- Part 8: GraphQL
-- Part 9: Typescript
-- Part 10: React Native
+- [Part 7: React router, custom hooks, styling app with CSS and webpack](./part7)
+- [Part 8: GraphQL](./part8)
+- [Part 9: Typescript](./part9)
+- [Part 10: React Native](./part10)
+- [Part 11: CI/CD](./part11)
