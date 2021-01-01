@@ -8,34 +8,34 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
 
 ## Table of Content
 
-- [part 0: Fundamentals of Web apps](./part0)
+- [Part 0: Fundamentals of Web apps](./part0)
   - [0.4: new note](part0/0.4.md)
   - [0.5: Single page app](part0/0.5.md)
   - [0.6: New note](part0/0.6.md)
-- [part 1: Introduction to React](./part1)
+- [Part 1: Introduction to React](./part1)
   - [1.1-1.5: courseinfo](part1/courseinfo)
   - [1.6-1.11: unicafe](part1/unicafe)
   - [1.12-1.14: anecdotes](part1/anecdotes)
-- [part 2: Communicating with server](./part2)
+- [Part 2: Communicating with server](./part2)
   - [2.1-2.5: Course information](part2/courseinfo)
   - [2.6-2.11, 2.15-2.20: The Phonebook](part2/phonebook)
   - [2.12-2.14: Data for countries](part2/countries)
-- [part 3: Programming a server with NodeJS and Express](./part3)
+- [Part 3: Programming a server with NodeJS and Express](./part3)
   - [3.1-3.22: Phonebook frontend](part2/phonebook)
   - [3.9: Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
   - [3.10, 3.21: Phonebook deploy to heroku](https://agile-refuge-83919.herokuapp.com/)
   - [3.13-3.21: Phonebook database](https://github.com/Zeroto521/Phonebook-backend/blob/main/src/model.js)
-- [part 4: Testing Express servers, user administration](./part4)
+- [Part 4: Testing Express servers, user administration](./part4)
   - [4.1-4.2, 4.13-4.14: Blog list backend](https://github.com/Zeroto521/Bloglist-backend)
   - [4.3-4.7: helper functions and unit tests](https://github.com/Zeroto521/Bloglist-backend/blob/master/tests/list.test.js)
   - [4.8-4.12: Blog list tests](https://github.com/Zeroto521/Bloglist-backend/blob/master/tests/api.test.js)
   - [4.13-4.22: Blog list expansions](https://github.com/Zeroto521/Bloglist-backend)
-- [part 5: Testing React apps](./part5)
+- [Part 5: Testing React apps](./part5)
   - [5.1-5.12: Blog list frontend](https://github.com/Zeroto521/Bloglist-frontend)
   - [5.13-5.16: Blog list tests](https://github.com/Zeroto521/Bloglist-frontend/blob/master/src/components/Blog.test.js)
   - [5.17-5.22: Blog list end to end testing](https://github.com/Zeroto521/Bloglist-frontend/blob/master/cypress/integration/blog_app.spec.js)
-- part 6: State management with Redux
-- part 7: React router, custom hooks, styling app with CSS and webpack
-- part 8: GraphQL
-- part 9: Typescript
-- part 10: React Native
+- Part 6: State management with Redux
+- Part 7: React router, custom hooks, styling app with CSS and webpack
+- Part 8: GraphQL
+- Part 9: Typescript
+- Part 10: React Native
