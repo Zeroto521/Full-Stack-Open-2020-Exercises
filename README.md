@@ -53,6 +53,7 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [7.17-7.18: comments](https://github.com/Zeroto521/Bloglist-frontend/tree/part7)
   - [7.19-7.21: Styles](https://github.com/Zeroto521/Bloglist-frontend/tree/part7)
 - [Part 8: GraphQL](./part8)
+  - [8.1-8.7: library backend](https://github.com/Zeroto521/library-backend)
 - [Part 9: Typescript](./part9)
 - [Part 10: React Native](./part10)
 - [Part 11: CI/CD](./part11)
