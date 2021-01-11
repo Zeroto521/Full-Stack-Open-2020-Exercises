@@ -5,3 +5,4 @@
 ## Table of Content
 
 - [8.1-8.7: library backend](https://github.com/Zeroto521/library-backend)
+- [8.8-8.12: library frontend](https://github.com/Zeroto521/library-frontend)
