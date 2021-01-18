@@ -1,45 +1,29 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const courseParts = [
+import Contents from './components/Contents';
+import Header from './components/Header';
+import Total from './components/Total';
+import CoursePart from './types';
+
+const courseParts: CoursePart[] = [
   {
     name: "Fundamentals",
     exerciseCount: 10,
+    description: "This is an awesome course part"
   },
   {
     name: "Using props to pass data",
     exerciseCount: 7,
+    groupProjectCount: 3
   },
   {
     name: "Deeper type usage",
     exerciseCount: 14,
-  },
+    description: "Confusing description",
+    exerciseSubmissionLink: "https://fake-exercise-submit.made-up-url.dev"
+  }
 ];
-
-const Header: React.FC<{ name: string }> = ({ name }) => <h1>{name}</h1>;
-
-interface CoursePart {
-  name: string;
-  exerciseCount: number;
-}
-
-const Content: React.FC<{ coursePart: CoursePart }> = ({ coursePart }) => (
-  <p>
-    {coursePart.name} {coursePart.exerciseCount}
-  </p>
-);
-
-const Contents: React.FC<{ courseParts: CoursePart[] }> = ({ courseParts }) => (
-  <div>
-    {courseParts.map((c) => (
-      <Content coursePart={c} />
-    ))}
-  </div>
-);
-
-const Total: React.FC<{ number: number }> = ({ number }) => (
-  <p>Number of exercises number {number}</p>
-);
 
 const App: React.FC = () => {
   const courseName = "Half Stack application development";
