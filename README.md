@@ -57,5 +57,6 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
   - [8.8-8.12: library frontend](https://github.com/Zeroto521/library-frontend)
 - [Part 9: Typescript](./part9)
   - [9.1-9.7: calculator](https://github.com/Zeroto521/calculator)
+  - [9.14-9.15: course](./part9/course)
 - [Part 10: React Native](./part10)
 - [Part 11: CI/CD](./part11)
