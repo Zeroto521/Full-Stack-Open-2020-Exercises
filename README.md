@@ -58,5 +58,7 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
 - [Part 9: Typescript](./part9)
   - [9.1-9.7: calculator](https://github.com/Zeroto521/calculator)
   - [9.14-9.15: course](./part9/course)
+  - [9.8-9.13, 9.16, 9.19, 9.23: patientor backend](https://github.com/Zeroto521/Patientor-backend)
+  - [9.17-9.18, 9.20-9.22, 9.24-27: patientor frontend](https://github.com/Zeroto521/patientor)
 - [Part 10: React Native](./part10)
 - [Part 11: CI/CD](./part11)
