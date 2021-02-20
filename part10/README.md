@@ -4,4 +4,4 @@
 
 ## Table of Content
 
-- [10.1-10.2: rate-repository-app](https://github.com/Zeroto521/rate-repository-app)
+- [10.1-10.27: rate-repository-app](https://github.com/Zeroto521/rate-repository-app)
