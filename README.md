@@ -63,3 +63,4 @@ This project is the exercises of the [Full Stack Open 2020](https://fullstackope
 - [Part 10: React Native](./part10)
   - [10.1-10.27: rate-repository-app](https://github.com/Zeroto521/rate-repository-app)
 - [Part 11: CI/CD](./part11)
+  - [11.1-11.22: fullstack-open-pokedex](https://github.com/Zeroto521/fullstack-open-pokedex)
