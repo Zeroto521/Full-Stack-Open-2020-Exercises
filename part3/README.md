@@ -4,7 +4,7 @@
 
 ## Table of Content
 
-- [3.1-3.22: Phonebook frontend](part2/phonebook)
+- [3.1-3.22: Phonebook frontend](../part2/phonebook)
 - [3.9: Phonebook backend](https://github.com/Zeroto521/Phonebook-backend)
 - [3.10, 3.21: Phonebook deploy to heroku](https://agile-refuge-83919.herokuapp.com/)
 - [3.13-3.21: Phonebook database](https://github.com/Zeroto521/Phonebook-backend/blob/main/src/model.js)
